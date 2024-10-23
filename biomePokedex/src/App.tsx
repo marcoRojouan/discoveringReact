@@ -8,7 +8,7 @@ function App() {
   const [count, setCount] = useState(0);
   const pokemonList = [
     {
-      name: "Onion Turtle",
+      name: "Bulbazaur",
       imgSrc: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
     },
     {
