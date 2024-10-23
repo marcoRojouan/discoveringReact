@@ -13,6 +13,7 @@ function App() {
     },
     {
       name: "Mew",
+      imgSrc: "https://static.pkmcards.fr/cards/fr/mew/image-cartes-a-collectionner-pokemon-card-game-tcg-pkmcards-mew-fr-193-ecarlate-et-violet-151-mew-ex.webp",
     },
   ]
 
@@ -20,6 +21,7 @@ function App() {
     <>
       <div>
         <PokemonCard pokemon={pokemonList[0]} />
+        <PokemonCard pokemon={pokemonList[1]} />
       </div>
     </>
   );
