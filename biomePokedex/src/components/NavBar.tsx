@@ -16,9 +16,24 @@ type NavBarProps = {
 
 export default function NavBar({ pokemonList, pokemonIndex, setPokemonIndex }: NavBarProps) {
 
+    const handlePikachu = (pokemonIndex: number, name: string) => {
+        setPokemonIndex(pokemonIndex)
+        if (name === "pikachu") {
+            alert("pika pikachu!!!")
+        }
+    }
+
 
     return <div>
-        {pokemonList.map((p, index) => (<button key={p.name} type="button" onClick={() => setPokemonIndex(index)}>{p.name}</button>))}
+        {pokemonList.map((pokemonList, pokemonIndex) => (
+            <button key={pokemonList.name}
+                type="button"
+                onClick={() => handlePikachu(pokemonIndex, pokemonList.name)}
+            >
+                {pokemonList.name}
+            </button>
+        ))}
+
     </div>
 
 
